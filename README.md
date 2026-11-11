@@ -124,3 +124,7 @@ bash serve.sh <model>
   year    = {2026}
 }
 ```
+
+## 🙏 Acknowledgement
+
+LeapQuant is built on [vLLM](https://github.com/vllm-project/vllm), [TileLang](https://github.com/tile-ai/tilelang), and [Flash Linear Attention](https://github.com/fla-org/flash-linear-attention). We also extend our thanks to the Kernel Design Agents (KDA) team for co-evolving the kernels for LeapQuant.
