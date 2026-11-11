@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leapquant"
+version = "0.1.0"
+description = "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "Apache-2.0"}
+dependencies = ["vllm==0.30.0", "tilelang==0.1.12"]
+
+[project.entry-points."vllm.general_plugins"]
+leapquant = "leapquant.vllm:register"
+
+[tool.setuptools.packages.find]
+include = ["leapquant*"]
